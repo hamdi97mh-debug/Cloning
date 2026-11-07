@@ -1,42 +1,42 @@
 feature,area,priority,original,clone,notes
-Create a page from home in one tap,pages,must,yes,no,FAB on S02
-Page title and body autosave,pages,must,yes,no,save on every change; survives app kill
-Text heading1-3 blocks,editor,must,yes,no,
-To-do checkbox block,editor,must,yes,no,
-Bulleted and numbered list blocks,editor,must,yes,no,
-Enter splits a block and Backspace merges,editor,must,yes,no,core editing feel
-Slash or plus menu to insert a block,editor,must,yes,no,S05
-Turn a block into another type,editor,must,yes,no,S06
-Reorder blocks by drag,editor,must,yes,no,
-Delete and duplicate a block,editor,must,yes,no,
-Nested pages (page inside page),pages,must,yes,no,
-Sidebar page tree with expand and collapse,navigation,must,yes,no,S03
-Full-text search across pages,search,must,yes,no,S09
-Favourites shown on home,navigation,must,yes,no,
-Recent pages on home,navigation,must,yes,no,
-Trash with restore and permanent delete,pages,must,yes,no,S16
-Works fully offline,data,must,yes,no,local database first
-Light and dark theme,settings,must,yes,no,
-Undo and redo in the editor,editor,must,yes,no,
-Move a page to another parent,pages,must,yes,no,S08
-Markdown shortcuts (# - [] > ```),editor,should,yes,no,
+Create a page from home in one tap,pages,must,yes,yes,FAB on S02
+Page title and body autosave,pages,must,yes,yes,save on every change; survives app kill
+Text heading1-3 blocks,editor,must,yes,yes,
+To-do checkbox block,editor,must,yes,yes,
+Bulleted and numbered list blocks,editor,must,yes,yes,
+Enter splits a block and Backspace merges,editor,must,yes,yes,core editing feel; backspace-merge relies on keyboard sending a key event; works on hardware keyboards and most soft keyboards - verify on device
+Slash or plus menu to insert a block,editor,must,yes,yes,S05
+Turn a block into another type,editor,must,yes,yes,S06
+Reorder blocks by drag,editor,must,yes,partial,partial: move up/down buttons; no drag yet
+Delete and duplicate a block,editor,must,yes,yes,
+Nested pages (page inside page),pages,must,yes,yes,
+Sidebar page tree with expand and collapse,navigation,must,yes,yes,S03
+Full-text search across pages,search,must,yes,yes,S09
+Favourites shown on home,navigation,must,yes,yes,
+Recent pages on home,navigation,must,yes,yes,
+Trash with restore and permanent delete,pages,must,yes,yes,S16
+Works fully offline,data,must,yes,yes,local database first
+Light and dark theme,settings,must,yes,yes,
+Undo and redo in the editor,editor,must,yes,yes,
+Move a page to another parent,pages,must,yes,yes,S08
+Markdown shortcuts (# - [] > ```),editor,should,yes,yes,
 Bold italic code link inline formatting,editor,should,yes,no,
-Toggle quote callout divider blocks,editor,should,yes,no,
-Code block with language label,editor,should,yes,no,
+Toggle quote callout divider blocks,editor,should,yes,partial,partial: quote callout divider done; no toggle block
+Code block with language label,editor,should,yes,partial,partial: code block without language label
 Image block from gallery or camera,editor,should,yes,no,
-Page icon (emoji) and cover image,pages,should,yes,no,S15
+Page icon (emoji) and cover image,pages,should,yes,partial,S15; partial: emoji icon; no cover image
 Database table view with typed properties,database,should,yes,no,S10
 Database board view grouped by select,database,should,yes,no,S11
 Database row opens as a page,database,should,yes,no,S12
 Filter and sort a database view,database,should,yes,no,S14
-Export a page to Markdown,export,should,yes,no,
+Export a page to Markdown,export,should,yes,yes,
 Backup and restore the whole workspace to a file,data,should,yes,no,clone's own format
 Templates (own original templates),pages,could,yes,no,S18; write our own content
 Text and background colours on blocks,editor,could,yes,no,
 Date and checkbox and url properties,database,could,yes,no,
 Calendar view of a database,database,could,yes,no,
 Home screen widget for quick note,android,could,no,no,an extra the original lacks - verify
-Share text from other apps into a new page,android,could,yes,no,Android share intent
+Share text from other apps into a new page,android,could,yes,yes,Android share intent
 Account sign-in and cloud sync,data,could,yes,no,+M size; after v1
 Import Markdown files,import,could,yes,no,
 Real-time multi-user collaboration,collaboration,skip,yes,skip,L on its own; not v1

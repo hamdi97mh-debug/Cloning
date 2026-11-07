@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Original mark: a sheet of paper with a folded corner and three lines. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M38,28h26l12,12v38a4,4 0,0 1,-4 4h-34a4,4 0,0 1,-4 -4v-46a4,4 0,0 1,4 -4z" />
+    <path
+        android:fillColor="#FFCFE3DD"
+        android:pathData="M64,28v10a2,2 0,0 0,2 2h10z" />
+    <path
+        android:fillColor="#FF2F6B5E"
+        android:pathData="M44,52h22v4h-22z M44,62h22v4h-22z M44,72h13v4h-13z" />
+</vector>
